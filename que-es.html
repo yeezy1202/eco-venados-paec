@@ -3,43 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué es el PAEC? - Eco-Venados en Acción</title>
+    <title>¿Qué es? - Eco-Venados en Acción</title>
     <link rel="stylesheet" href="css/que-es.css">
     <style>
-        /* Estilos de apoyo para el índice interno y anclas */
         html {
             scroll-behavior: smooth;
         }
-        .indice-interno {
-            background-color: #f4f8f4;
-            border-left: 4px solid #2e7d32;
-            padding: 15px 20px;
-            margin: 20px 0 30px 0;
-            border-radius: 4px;
+        ol {
+            line-height: 1.6;
+            margin-top: 8px;
+            padding-left: 22px;
         }
-        .indice-interno h3 {
-            margin-top: 0;
-            color: #1b5e20;
-            font-size: 1.1rem;
+        ol li {
+            margin-bottom: 8px;
         }
-        .indice-interno ul {
-            margin: 10px 0 0 0;
-            padding-left: 20px;
-        }
-        .indice-interno li {
-            margin-bottom: 6px;
-        }
-        .indice-interno a {
+        .enlace-indice {
             color: #2e7d32;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: bold;
         }
-        .indice-interno a:hover {
+        .enlace-indice:hover {
             text-decoration: underline;
         }
         .volver-arriba {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 12px;
             font-size: 0.9rem;
             color: #2e7d32;
             text-decoration: none;
@@ -54,94 +42,105 @@
     <a name="inicio-pagina"></a>
 
     <header>
-        <div class="logo-titulo">
-            <img src="logo-cbtis.jpg" alt="Logo CBTis 269" style="width: 45px; height: 45px; object-fit: contain;">
-            <h1>Eco-Venados en Acción</h1>
+        <div class="header-info">
+            <img src="logo-cbtis.jpg" alt="Logo CBTis 269" class="logo">
+            <div class="header-textos">
+                <h1>Eco-Venados en Acción</h1>
+                <p class="subtitulo">PAEC: Transformando el Entorno</p>
+            </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="que-es.html" class="activo">¿Qué es PAEC?</a></li>
-                <li><a href="problema-ambiental.html">Problema Ambiental</a></li>
-                <li><a href="tipos-residuos.html">Tipos de Residuos</a></li>
-                <li><a href="tres-r.html">Las 3R</a></li>
-                <li><a href="escuela.html">En la Escuela</a></li>
-                <li><a href="comunidad.html">En la Comunidad</a></li>
-                <li><a href="formulario.php">Mi Compromiso</a></li>
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="que-es.html" class="active">¿Qué es?</a>
+            <a href="tipos-residuos.html">Tipos de Residuos</a>
+            <a href="tres-r.html">Las 3R</a>
+            <a href="problema-ambiental.html">Problema Ambiental</a>
+            <a href="escuela.html">En Nuestra Escuela</a>
+            <a href="comunidad.html">En la Comunidad</a>
+            <a href="formulario.php">Mi Compromiso</a>
         </nav>
     </header>
 
     <main>
-        <section class="contenedor-principal">
-            <h2>Programa Aula, Escuela y Comunidad (PAEC)</h2>
-            <p>El proyecto <strong>Eco-Venados en Acción</strong> surge como una iniciativa integral del <strong>CBTis No. 269</strong> en Ciudad Juárez, Chihuahua, orientada a transformar los hábitos ambientales de nuestra comunidad estudiantil mediante el aprendizaje práctico y el compromiso social.</p>
+        <!-- TARJETA 1: INTRODUCCIÓN E ÍNDICE CON ANCLAS INTERNAS -->
+        <section class="contenido">
+            <h2>¿Qué es "Eco-Venados en Acción"?</h2>
+            <p><strong>Eco-Venados en Acción</strong> es una iniciativa estudiantil desarrollada dentro del Programa Aula, Escuela y Comunidad (PAEC) en el <strong>CBTis No. 269</strong>. El objetivo general de este proyecto es concientizar, idear soluciones prácticas y fomentar activamente el movimiento ecologista tanto dentro de nuestra institución educativa como en los alrededores de nuestra ciudad.</p>
+            <p>Buscamos transformar la manera en que percibimos nuestros desechos diarios, demostrando que a través de la educación ambiental, la organización comunitaria y el uso de herramientas tecnológicas, los jóvenes podemos liderar un cambio real y sostenible en nuestro entorno.</p>
 
-            <!-- ÍNDICE CON ANCLAS LLAMADAS DESDE LA MISMA PÁGINA -->
-            <div class="indice-interno">
-                <h3>Contenido de esta sección</h3>
+            <div class="modulo-card">
+                <h3>Índice de Contenido</h3>
                 <ul>
-                    <li><a href="#definicion">1. ¿Qué es el modelo PAEC?</a></li>
-                    <li><a href="#objetivos">2. Objetivos principales de Eco-Venados</a></li>
-                    <li><a href="#ejes-accion">3. Ejes de implementación y fases</a></li>
-                    <li><a href="#referencias">4. Referencias documentales</a></li>
+                    <li><a href="#estructura" class="enlace-indice">1. Estructura y Ejes de Nuestro Proyecto</a></li>
+                    <li><a href="#objetivos" class="enlace-indice">2. Objetivos Prioritarios (Lista Ordenada)</a></li>
+                    <li><a href="#fases" class="enlace-indice">3. Fases de Implementación PAEC</a></li>
+                    <li><a href="#referencias" class="enlace-indice">4. Referencias Documentales</a></li>
                 </ul>
             </div>
+        </section>
 
-            <!-- SECCIÓN 1 -->
-            <a name="definicion"></a>
-            <article class="bloque-info">
-                <h3>1. ¿Qué es el modelo PAEC?</h3>
-                <p>El Programa Aula, Escuela y Comunidad (PAEC) es una estrategia educativa de la Nueva Escuela Mexicana que busca vincular los conocimientos adquiridos en las asignaturas del aula con la resolución de problemáticas reales en el plantel y su entorno inmediato.</p>
-                <p>En lugar de abordar la ecología únicamente desde la teoría, el programa promueve la participación activa de estudiantes, docentes y familias para diagnosticar, intervenir y evaluar mejoras tangibles en la gestión de residuos sólidos urbanos.</p>
-                <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
-            </article>
+        <!-- TARJETA 2: ESTRUCTURA Y EJES -->
+        <a name="estructura"></a>
+        <section class="contenido">
+            <h2>Estructura y Ejes de Nuestro Proyecto</h2>
+            <p>Para abordar la problemática ambiental de manera integral y accesible para toda la comunidad, este sitio web se encuentra dividido en módulos estratégicos diseñados para informar y motivar a la acción:</p>
 
-            <hr>
+            <div class="modulo-card">
+                <h3>1. Clasificación y Tipos de Residuos</h3>
+                <p>Un apartado dedicado a profundizar en los distintos tipos de residuos que existen y que generamos cotidianamente como seres humanos (papel, cartón, plásticos, metales, vidrio y desechos orgánicos), enseñando cómo identificarlos para evitar que se conviertan en basura mezclada.</p>
+            </div>
 
-            <!-- SECCIÓN 2 (CON LISTA ORDENADA <ol>) -->
-            <a name="objetivos"></a>
-            <article class="bloque-info">
-                <h3>2. Objetivos principales de Eco-Venados</h3>
-                <p>Para lograr un impacto medible dentro del CBTis No. 269, establecimos cinco metas prioritarias en orden de ejecución:</p>
-                <ol>
-                    <li><strong>Diagnóstico ambiental:</strong> Identificar los puntos críticos de acumulación de basura y los tipos de residuos más frecuentes dentro de las instalaciones escolares.</li>
-                    <li><strong>Concientización estudiantil:</strong> Informar a los grupos sobre las consecuencias de la contaminación local y el tiempo de degradación de los materiales cotidianos.</li>
-                    <li><strong>Separación en la fuente:</strong> Implementar puntos de acopio diferenciados para residuos orgánicos, plásticos PET, papel, cartón y desechos electrónicos.</li>
-                    <li><strong>Fomento de la economía circular:</strong> Promover la reducción del consumo de plásticos de un solo uso y la reutilización creativa de materiales escolares.</li>
-                    <li><strong>Proyección comunitaria:</strong> Extender las prácticas de reciclaje hacia los hogares de los estudiantes y las colonias aledañas al plantel.</li>
-                </ol>
-                <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
-            </article>
+            <div class="modulo-card">
+                <h3>2. La Estrategia de las Tres Erres (3R)</h3>
+                <p>Una sección completamente enfocada en desglosar la jerarquía ecológica de <strong>Reducir, Reutilizar y Reciclar</strong>, brindando recomendaciones prácticas respaldadas por organismos ambientales para disminuir nuestra huella ecológica desde el hogar.</p>
+            </div>
 
-            <hr>
+            <div class="modulo-card">
+                <h3>3. El Problema Ambiental Global</h3>
+                <p>Un espacio focalizado en analizar la crisis de contaminación actual, el impacto de los plásticos de un solo uso y las consecuencias que la mala gestión de residuos provoca en los ecosistemas, el clima y la salud pública.</p>
+            </div>
 
-            <!-- SECCIÓN 3 (CON LISTA ORDENADA <ol>) -->
-            <a name="ejes-accion"></a>
-            <article class="bloque-info">
-                <h3>3. Ejes de implementación y fases</h3>
-                <p>El desarrollo del proyecto se organiza en tres etapas sucesivas durante el semestre:</p>
-                <ol>
-                    <li><strong>Fase Aula:</strong> Investigación documental, análisis de datos estadísticos sobre generación de residuos y desarrollo de herramientas digitales informativas.</li>
-                    <li><strong>Fase Escuela:</strong> Jornadas de limpieza, instalación de contenedores señalizados y campañas de difusión entre los turnos matutino y vespertino.</li>
-                    <li><strong>Fase Comunidad:</strong> Vinculación con centros de acopio locales y registro de compromisos ambientales individuales mediante nuestra plataforma web.</li>
-                </ol>
-                <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
-            </article>
+            <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
+        </section>
 
-            <hr>
+        <!-- TARJETA 3: OBJETIVOS PRIORITARIOS (LISTA ORDENADA <ol>) -->
+        <a name="objetivos"></a>
+        <section class="contenido">
+            <h2>Objetivos Prioritarios de Eco-Venados</h2>
+            <p>Para lograr un impacto medible dentro del CBTis No. 269, establecimos cinco metas en estricto orden de ejecución:</p>
+            <ol>
+                <li><strong>Diagnóstico ambiental:</strong> Identificar los puntos críticos de acumulación de basura y los tipos de residuos más frecuentes dentro de las instalaciones escolares.</li>
+                <li><strong>Concientización estudiantil:</strong> Informar a los grupos sobre las consecuencias de la contaminación local y el tiempo de degradación de los materiales cotidianos.</li>
+                <li><strong>Separación en la fuente:</strong> Implementar puntos de acopio diferenciados para residuos orgánicos, plásticos PET, papel, cartón y desechos electrónicos.</li>
+                <li><strong>Fomento de la economía circular:</strong> Promover la reducción del consumo de plásticos de un solo uso y la reutilización creativa de materiales escolares.</li>
+                <li><strong>Proyección comunitaria:</strong> Extender las prácticas de reciclaje hacia los hogares de los estudiantes y las colonias aledañas al plantel.</li>
+            </ol>
+            <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
+        </section>
 
-            <!-- SECCIÓN 4 -->
-            <a name="referencias"></a>
-            <article class="bloque-info">
-                <h3>4. Referencias documentales</h3>
-                <ul>
-                    <li>Secretaría de Medio Ambiente y Recursos Naturales [SEMARNAT]. (2020). <em>Diagnóstico Básico para la Gestión Integral de los Residuos</em>. Gobierno de México.</li>
-                    <li>Programa de las Naciones Unidas para el Medio Ambiente [PNUMA]. (2021). <em>De la contaminación a la solución: una evaluación global de la basura marina y la contaminación por plásticos</em>. ONU.</li>
-                    <li>Subsecretaría de Educación Media Superior [SEMS]. (2023). <em>Orientaciones para la implementación del Programa Aula, Escuela y Comunidad (PAEC)</em>. SEP.</li>
-                </ul>
-                <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
-            </article>
+        <!-- TARJETA 4: FASES PAEC (LISTA ORDENADA <ol>) -->
+        <a name="fases"></a>
+        <section class="contenido">
+            <h2>Fases de Implementación PAEC</h2>
+            <p>El desarrollo del proyecto se organiza en tres etapas sucesivas durante el semestre:</p>
+            <ol>
+                <li><strong>Fase Aula:</strong> Investigación documental, análisis de datos sobre generación de residuos y desarrollo de herramientas digitales informativas.</li>
+                <li><strong>Fase Escuela:</strong> Jornadas de limpieza, instalación de contenedores señalizados y campañas de difusión entre los turnos matutino y vespertino.</li>
+                <li><strong>Fase Comunidad:</strong> Vinculación con centros de acopio locales y registro de compromisos ambientales individuales mediante nuestra plataforma web.</li>
+            </ol>
+            <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
+        </section>
+
+        <!-- TARJETA 5: REFERENCIAS -->
+        <a name="referencias"></a>
+        <section class="contenido referencias">
+            <h2>Referencias Documentales</h2>
+            <ul>
+                <li>Secretaría de Medio Ambiente y Recursos Naturales [SEMARNAT]. (2020). <em>Diagnóstico Básico para la Gestión Integral de los Residuos</em>. Gobierno de México.</li>
+                <li>Programa de las Naciones Unidas para el Medio Ambiente [PNUMA]. (2021). <em>De la contaminación a la solución: una evaluación global de la basura marina y la contaminación por plásticos</em>. ONU.</li>
+                <li>Subsecretaría de Educación Media Superior [SEMS]. (2023). <em>Orientaciones para la implementación del Programa Aula, Escuela y Comunidad (PAEC)</em>. SEP.</li>
+            </ul>
+            <a href="#inicio-pagina" class="volver-arriba">Volver al índice</a>
         </section>
     </main>
 
